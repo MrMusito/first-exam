@@ -1,0 +1,31 @@
+Body {
+    background-color: #475b6e;
+    color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    background-image: url(../img/Liquidtal.jpg);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-id {
+    display: flex;
+}
+
+.header-img {
+    width: 200px;
+    height: auto;
+}
+.header-ttl {
+    color: rgb(255, 153, 0);
+}
+.header-button {
+    background-color: #fff;
+}
