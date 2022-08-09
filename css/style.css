@@ -1,160 +1,45 @@
-Body {
-    background-color: #475b6e;
-    color: blanchedalmond;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
 
-/* HEADER */
-
-.header {
-    /* position: fixed; */
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .75);;
-    border-bottom: 3px solid rgb(206, 14, 14);
-    z-index: 100;
-}
-
-h1 {
-    font-size: 40px;
-}
-
-.header-container {
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;}
+body {
+    background: lightgray;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: rgb(119, 119, 58); */
-
-}
-
-.header-id {
-    /* display: flex; */
-    /* background-color: pink; */
-}
-
-.header-img {
-    width: 100px;
-    height: 100px;
-}
-.header-ttl {
-    color: rgb(255, 17, 0);
-}
-.header-button {
-    background-color: #fff;
-}
-
-.div {
-    display: flex;
-    bottom: 0;
-    /* background-color: rgb(255, 0, 43); */
-}
-
-@media screen and (min-width: 321px) {
-    .nav {
-        display: flex;
-        /* background-color: brown; */
-        padding: 0 40px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .nav {
-        display: none;
-    }
-}
-
-.main-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: center;
-    list-style: none;
-    gap: 3rem;
+    align-items: center;
+    min-height: 100vh;
 }
-
-.nav-item {
-    /* background-color: blueviolet; */
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 100px;
+    background: #fff;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
-
-.nav-button {}
-
-
-.info {
-    display: none;
+.container .left-container {
+    position: relative;
+    background: darkblue;
+    padding: 40px;
 }
-
-.info-text {
-    background-color: rgb(250, 0, 0);
-
-}
-
-/* SECTION */
-
-.section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.main-menu {
+.profile-text {
+    position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
+.container .right-container {
+    position: relative;
+    background: #fff;
+    padding: 40px;
 
-
-.ul-button,
-.nav-button {
-    background-color: rgb(9, 170, 111);
-    border: 1px solid black;
-    border-radius: 12px;
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
-.hide {
-    display: flex;
-}
-
-.intro {}
-
-.exp {}
-
-.exp-txt {}
-
-.training {}
-
-.training-txt {}
-
-.skills {}
-
-.skills-txt {}
-
-.speak {}
-
-.speak-txt {}
-
-.hobbies {}
-
-.hobbies-txt {}
-
-.footer {}
-
-.footer-ul {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-}
-
-.footer-list {
-    list-style: none;
-}
-
-.footer-link {
-    color: black;
-    text-decoration: none;    
 }
