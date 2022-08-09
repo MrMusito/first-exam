@@ -1,13 +1,22 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@300&display=swap');
 *
-{
+    {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Big Shoulders Display', cursive;}
+    font-family: 'Big Shoulders Display', cursive;
+
+}
+:root {
+    --darkest-blue: #1a237e;
+    --orange: #ffb300;
+    --yellow: #fdd835;
+    --lightgray: #d3d3d3;
+    --white: #fff;
+}
 body {
-    background: lightgray;
+    background: var(--lightgray);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,7 +27,7 @@ body {
     width: 100%;
     max-width: 1000px;
     min-height: 100px;
-    background: #fff;
+    background: var(--white);
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -26,7 +35,7 @@ body {
 }
 .container .left-container {
     position: relative;
-    background: #0d088e;
+    background: var(--darkest-blue);
     padding: 40px;
 }
 .profile-text {
@@ -41,7 +50,7 @@ body {
     position: relative;
     width: 200px;
     height: 200px;
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
     border-radius: 50%;
     overflow: hidden;
 }
@@ -54,7 +63,7 @@ body {
     object-fit: cover;
 }
 .profile-text h2 {
-    color: #fff;
+    color: var(--white);
     font-size: 1.5em;
     margin-top: 20px;
     text-transform: uppercase;
@@ -70,7 +79,7 @@ body {
     padding-top: 40px;
 }
 .title {
-    color: #fff;
+    color: var(--white);
     text-transform: uppercase;
     font-size: 600;
     letter-spacing: 1px;
@@ -89,25 +98,25 @@ body {
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: #03a9f4;
+    color: var(--orange);
 }
 .contactInfo ul li span {
-    color: #fff;
+    color: var(--white);
     font-weight: 300;
 }
 .contactInfo.education li {
     margin-bottom: 15px;
 }
 .contactInfo.education h5 {
-    color: #03a9f4;
+    color: var(--orange);
     font-weight: 500;
 }
 .contactInfo.education h4:nth-child(2) {
-    color: #fff;
+    color: var(--white);
     font-weight: 500;
 }
 .contactInfo.education h4 {
-    color: #fff;
+    color: var(--white);
     font-weight: 300;
 }
 .contactInfo.language .percent {
@@ -123,11 +132,11 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    background: #03a9f4;
+    background: var(--orange);
 }
 .container .right-container {
     position: relative;
-    background: #fff;
+    background: var(--white);
     padding: 40px;
 }
 .about {
@@ -162,4 +171,23 @@ p {
     text-transform: uppercase;
     color: #2a7da2;
     font-size: 16px;
+}
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.skills .box h4 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+}
+.skills .box .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #f0f0f0;
 }
