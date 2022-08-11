@@ -169,7 +169,7 @@ p {
 }
 .about .box .text h4 {
     text-transform: uppercase;
-    color: #2a7da2;
+    color: var(--darkest-blue);
     font-size: 16px;
 }
 .skills .box {
@@ -190,4 +190,27 @@ p {
     width: 100%;
     height: 10px;
     background: #f0f0f0;
+}
+.about .interests {
+    background-color: var(--yellow);
+}
+.items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.items .item {
+    display: grid;
+    text-align: center;
+    color: var(--darkest-blue);
+}
+.items .item .bigger {
+    font-size: 24px;
+    color: var(--orange);
+}
+.interests .box h4 {
+    text-transform: uppercase;
+    color: #848c99;
+    font-weight: 500;
+    margin-top: 5px;
 }
