@@ -26,3 +26,7 @@ music.addEventListener("mouseenter", function(event) {
 music.addEventListener("mouseleave", function(event) {
     this.classList.remove("bigger")
 });
+const all = document.querySelectorAll("about");
+all.addEventListener("click", function(event){
+    console.log(event)
+});
